@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Hospital Queue</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f6fb;color:#17243b}
+header{background:#102b46;color:white;padding:24px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+header h1{margin:0;font-size:23px}
+header p{margin:7px 0 0;color:#c8d8e8}
+.tag{background:#1e806d;padding:8px 13px;border-radius:20px;font-size:12px}
+main{max-width:1050px;margin:28px auto;padding:0 16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:22px}
+.card,.panel{background:white;border-radius:14px;padding:20px;box-shadow:0 4px 18px #17243b0d}
+.card span{color:#718096;font-size:13px}
+.card strong{display:block;font-size:28px;margin-top:10px;color:#116b80}
+.layout{display:grid;grid-template-columns:1fr 1.3fr;gap:18px}
+h2{font-size:19px;margin:0 0 18px}
+label{display:block;font-size:13px;font-weight:bold;margin:14px 0 7px}
+input{width:100%;padding:13px;border:1px solid #d9e1ec;border-radius:9px;font-size:15px}
+button{border:0;border-radius:9px;padding:12px 16px;font-size:14px;font-weight:bold;cursor:pointer}
+.primary{background:#087e8b;color:white;width:100%;margin-top:15px}
+.next{background:#176b52;color:white}
+.clear{background:#fce9e9;color:#a33}
+.queue-item{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 0;border-bottom:1px solid #edf0f5}
+.queue-item:last-child{border:0}
+.token{font-weight:bold;color:#087e8b}
+.patient{font-weight:bold}
+.wait{font-size:12px;color:#718096;margin-top:5px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.actions button{flex:1}
+.empty{text-align:center;color:#8290a2;padding:28px 5px}
+.notice{margin-top:18px;padding:13px;background:#eaf5f8;border-radius:9px;color:#315d70;font-size:13px}
+#message{margin:12px 0;padding:10px;border-radius:8px;display:none}
+@media(max-width:700px){.layout{grid-template-columns:1fr}header{padding:20px}.card,.panel{padding:17px}}
+</style>
+</head>
+<body>
+<header>
+ <div>
+  <h1>🏥 Smart Hospital Queue</h1>
+  <p>Patient registration and queue management</p>
+ </div>
+ <span class="tag">● Queue Dashboard</span>
+</header>
+
+<main>
+ <section class="cards">
+  <div class="card"><span>Total Waiting</span><strong id="total">0</strong></div>
+  <div class="card"><span>Now Serving</span><strong id="serving">—</strong></div>
+  <div class="card"><span>Next Token</span><strong id="next">1</strong></div>
+  <div class="card"><span>Estimated Wait</span><strong id="wait">0 min</strong></div>
+ </section>
+
+ <div class="layout">
+  <section class="panel">
+   <h2>➕ Register Patient</h2>
+   <form id="patientForm">
+    <label for="patientName">Patient Name</label>
+    <input id="patientName" maxlength="60" placeholder="Enter patient name" required>
+    <button class="primary" type="submit">Add Patient to Queue</button>
+   </form>
+   <div id="message" role="status"></div>
+   <div class="notice">Each patient receives a unique token number. Estimated waiting time is 10 minutes per person ahead.</div>
+  </section>
+
+  <section class="panel">
+   <h2>👥 Current Patient Queue</h2>
+   <div id="queue"><div class="empty">No patients waiting.</div></div>
+   <div class="actions">
+    <button class="next" id="callNext">Call Next Patient</button>
+    <button class="clear" id="clearQueue">Clear Queue</button>
+   </div>
+  </section>
+ </div>
+ <p style="text-align:center;color:#8793a4;font-size:12px;margin-top:24px">Smart Hospital Queue · Demonstration website</p>
+</main>
+
+<script>
+const KEY="hospitalQueueDemo";
+let state;
+try {
+ state=JSON.parse(localStorage.getItem(KEY)) || {queue:[],nextToken:1,serving:"—"};
+ if(!Array.isArray(state.queue)) throw Error();
+} catch(e) {
+ state={queue:[],nextToken:1,serving:"—"};
+}
+function save(){
+ localStorage.setItem(KEY,JSON.stringify(state));
+ render();
+}
+function message(text){
+ const el=document.getElementById("message");
+ el.textContent=text;
+ el.style.display="block";
+}
+function render(){
+ document.getElementById("total").textContent=state.queue.length;
+ document.getElementById("serving").textContent=state.serving;
+ document.getElementById("next").textContent=state.nextToken;
+ document.getElementById("wait").textContent=(state.queue.length*10)+" min";
+ const area=document.getElementById("queue");
+ if(!state.queue.length){
+  area.innerHTML='<div class="empty">No patients waiting.</div>';
+  return;
+ }
+ area.innerHTML=state.queue.map((p,i)=>`
+  <div class="queue-item">
+   <div>
+    <div class="token">Token ${p.token}</div>
+    <div class="patient">${escapeHTML(p.name)}</div>
+    <div class="wait">Estimated wait: ${i*10} minutes</div>
+   </div>
+   <button class="clear" data-remove="${p.token}">Remove</button>
+  </div>`).join("");
+}
+function escapeHTML(value){
+ return String(value).replace(/[&<>"']/g,c=>({
+ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+ }[c]));
+}
+document.getElementById("patientForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const input=document.getElementById("patientName");
+ const name=input.value.trim();
+ if(!name){message("Please enter a patient name.");return;}
+ state.queue.push({name,token:state.nextToken});
+ state.nextToken++;
+ input.value="";
+ message("Patient registered successfully!");
+ save();
+});
+document.getElementById("callNext").addEventListener("click",()=>{
+ if(!state.queue.length){message("No patients waiting.");return;}
+ const patient=state.queue.shift();
+ state.serving="Token "+patient.token;
+ message("Now serving: "+patient.name+" (Token "+patient.token+")");
+ save();
+});
+document.getElementById("clearQueue").addEventListener("click",()=>{
+ if(!state.queue.length){message("Queue is already empty.");return;}
+ if(!confirm("Clear all waiting patients?"))return;
+ state.queue=[];
+ message("Waiting queue cleared.");
+ save();
+});
+document.getElementById("queue").addEventListener("click",e=>{
+ const token=e.target.dataset.remove;
+ if(!token)return;
+ state.queue=state.queue.filter(p=>String(p.token)!==token);
+ message("Patient removed from queue.");
+ save();
+});
+render();
+</script>
+</body>
+</html>
