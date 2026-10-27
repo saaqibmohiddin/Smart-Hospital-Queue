@@ -1,79 +1,68 @@
-import tkinter as tk
-from tkinter import messagebox
+import streamlit as st
 
-queue = []
-
-def add_patient():
-    name = entry_name.get()
-
-    if name == "":
-        messagebox.showwarning("Warning", "Enter patient name")
-        return
-
-    queue.append(name)
-
-    token = len(queue)
-    waiting_time = token * 10
-
-    messagebox.showinfo(
-        "Patient Added",
-        f"Token Number: {token}\nWaiting Time: {waiting_time} minutes"
-    )
-
-    entry_name.delete(0, tk.END)
-    update_queue()
-
-def call_next():
-    if len(queue) == 0:
-        messagebox.showinfo("Info", "No patients waiting")
-        return
-
-    patient = queue.pop(0)
-
-    messagebox.showinfo(
-        "Now Serving",
-        patient
-    )
-
-    update_queue()
-
-def update_queue():
-
-    queue_box.delete(0, tk.END)
-
-    for i, patient in enumerate(queue, start=1):
-        queue_box.insert(tk.END, f"{i}. {patient}")
-
-root = tk.Tk()
-
-root.title("Smart Hospital Queue System")
-root.geometry("500x400")
-
-title = tk.Label(
-    root,
-    text="Smart Hospital Queue System",
-    font=("Arial", 16, "bold")
+st.set_page_config(
+    page_title="Smart Hospital Queue System",
+    page_icon="🏥",
+    layout="centered"
 )
-title.pack(pady=10)
 
-entry_name = tk.Entry(root, width=30)
-entry_name.pack(pady=10)
+st.title("🏥 Smart Hospital Queue System")
+st.write("Manage patient queues easily.")
 
-btn_add = tk.Button(
-    root,
-    text="Add Patient",
-    command=add_patient
-)
-btn_add.pack(pady=5)
+# Initialize queue
+if "queue" not in st.session_state:
+    st.session_state.queue = []
 
-btn_call = tk.Button(
-    root,
-    text="Call Next Patient",
-    command=call_next
-)
-btn_call.pack(pady=5)
+if "next_token" not in st.session_state:
+    st.session_state.next_token = 1
 
-queue_box = tk.Listbox(root, width=40, height=10)
-queue_box.pack(pady=10)
+# Add patient
+st.subheader("Add Patient")
 
-root.mainloop()
+patient_name = st.text_input("Enter patient name")
+
+if st.button("Add Patient"):
+    if patient_name.strip():
+        token = st.session_state.next_token
+
+        st.session_state.queue.append({
+            "name": patient_name.strip(),
+            "token": token
+        })
+
+        st.session_state.next_token += 1
+
+        st.success(
+            f"Patient added! Token: {token}"
+        )
+    else:
+        st.warning("Please enter patient name.")
+
+# Display queue
+st.subheader("Current Patient Queue")
+
+if st.session_state.queue:
+    for position, patient in enumerate(
+        st.session_state.queue, start=1
+    ):
+        st.write(
+            f"Token {patient['token']} — "
+            f"{patient['name']} — "
+            f"Waiting time: {(position - 1) * 10} minutes"
+        )
+else:
+    st.info("No patients waiting.")
+
+# Call next patient
+st.subheader("Patient Service")
+
+if st.button("Call Next Patient"):
+    if st.session_state.queue:
+        patient = st.session_state.queue.pop(0)
+
+        st.success(
+            f"Now serving: {patient['name']} "
+            f"(Token {patient['token']})"
+        )
+    else:
+        st.warning("No patients waiting.")
