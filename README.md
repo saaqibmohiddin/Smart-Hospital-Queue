@@ -75,7 +75,6 @@ The goal is to make hospital queue management more organized, accessible, and ef
 
 🛠️ Technology Stack
 
-<div align="center">✦ Healthcare Technology ✦
 
 <p>
   <img src="https://img.shields.io/badge/PYTHON-102D42?style=for-the-badge&logo=python&logoColor=62D9C1" />
@@ -86,11 +85,7 @@ The goal is to make hospital queue management more organized, accessible, and ef
   <img src="https://img.shields.io/badge/JAVASCRIPT-102D42?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
 </p><p>
   <img src="https://img.shields.io/badge/LOCAL%20STORAGE-087E83?style=for-the-badge&logo=googlechrome&logoColor=white" />
-</p>Deep Navy · Medical Teal · Mint Green
-
-<sub>Modern Technology | Smart Healthcare | Digital Patient Management</sub>
-
-</div>
+</p>
 
 </div>
 
