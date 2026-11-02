@@ -150,7 +150,7 @@ Smart-Hospital-Queue/
 
 ## 🚀 INSTALLATION & SETUP
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=130&color=0:102D42,50:087E83,100:62D9C1&text=QUICK%20START&fontSize=30&fontColor=FFFFFF&fontAlignY=50" width="100%" />Get your Smart Hospital Queue running in minutes.
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=130&color=0:102D42,50:087E83,100:62D9C1&text=QUICK%20START&fontSize=30&fontColor=FFFFFF&fontAlignY=50" width="100%" />
 
 </div>🧩 STEP 01 — Prerequisites
 
@@ -162,7 +162,6 @@ Smart-Hospital-Queue/
 📥 STEP 02 — Get the Project
 
 git clone https://github.com/saaqibmohiddin/Smart-Hospital-Queue.git
-cd Smart-Hospital-Queue
 
 📦 STEP 03 — Install Requirements
 
