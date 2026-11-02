@@ -1,6 +1,4 @@
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:102D42,50:087E83,100:62D9C1&text=SMART%20HOSPITAL%20QUEUE&fontSize=35&fontColor=FFFFFF&fontAlignY=40&desc=SMART%20PATIENT%20FLOW%20%7C%20DIGITAL%20QUEUE%20MANAGEMENT&descSize=13&descAlignY=60" width="100%" />🏥 SMART HOSPITAL QUEUE
-
-Intelligent Patient Queue Management System
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:102D42,50:087E83,100:62D9C1&text=SMART%20HOSPITAL%20QUEUE&fontSize=35&fontColor=FFFFFF&fontAlignY=40&desc=SMART%20PATIENT%20FLOW%20%7C%20DIGITAL%20QUEUE%20MANAGEMENT&descSize=13&descAlignY=60" width="100%" /
 
 Smarter Queues. Reduced Waiting. Better Patient Experience.
 
