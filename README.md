@@ -246,7 +246,6 @@ Computer Science & Engineering
 Specialization in Artificial Intelligence
 
 <p>
-  <img src="https://img.shields.io/badge/ROLE-AI &%20SOFTWARE DEVELOPER-102D42?style=for-the-badge" />
   <img src="https://img.shields.io/badge/FOCUS-AI &%20SOFTWARE DEVELOPMENT-087E83?style=for-the-badge" />
 </p>🌐 CONNECT WITH ME
 
@@ -260,6 +259,6 @@ Specialization in Artificial Intelligence
 
 DESIGNED WITH PASSION FOR TECHNOLOGY
 
-<sub>Deep Navy · Medical Teal · Mint Green</sub>
+<sub>
 
 </div>
