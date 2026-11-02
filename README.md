@@ -244,7 +244,7 @@ Computer Science & Engineering
 
 Specialization in Artificial Intelligence
 
-<br/><img src="https://img.shields.io/badge/ROLE-AI &%20%E2%80%A2%20PYTHON%20DEVELOPER-087E83?style=for-the-badge&labelColor=102D42" /><br/><br/>
+<br/><img src="https://img.shields.io/badge/ROLE-AI%20%E2%80%A2%20PYTHON%20DEVELOPER-087E83?style=for-the-badge&labelColor=102D42" /><br/><br/>
 
 🌐 CONNECT WITH ME
 
