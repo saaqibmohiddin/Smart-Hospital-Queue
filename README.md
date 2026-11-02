@@ -73,9 +73,9 @@ The goal is to make hospital queue management more organized, accessible, and ef
 
 ---
 
-🛠️ TECHNOLOGY STACK
+🛠️ Technology Stack
 
-<div align="center">Powered by Modern Technologies
+<div align="center">✦ Healthcare Technology ✦
 
 <p>
   <img src="https://img.shields.io/badge/PYTHON-102D42?style=for-the-badge&logo=python&logoColor=62D9C1" />
@@ -85,28 +85,10 @@ The goal is to make hospital queue management more organized, accessible, and ef
   <img src="https://img.shields.io/badge/CSS3-087E83?style=for-the-badge&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/JAVASCRIPT-102D42?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
 </p><p>
-  <img src="https://img.shields.io/badge/LOCAL_STORAGE-087E83?style=for-the-badge&logo=googlechrome&logoColor=white" />
-</p></div>Technology Overview
+  <img src="https://img.shields.io/badge/LOCAL%20STORAGE-087E83?style=for-the-badge&logo=googlechrome&logoColor=white" />
+</p>Deep Navy · Medical Teal · Mint Green
 
-Technology| Purpose
-🐍 Python| Application logic and queue operations
-⚡ Streamlit| Python application interface
-🌐 HTML5| Web application structure
-🎨 CSS3| Styling and responsive layouts
-⚙️ JavaScript| Queue interactions and token management
-💾 Local Storage| Browser-based queue data persistence
-
-🎨 Design Theme
-
-<div align="center">Color| Hex Code| Purpose
-Deep Navy| "#102D42"| Professional healthcare background
-Medical Teal| "#087E83"| Primary healthcare identity
-Mint Green| "#62D9C1"| Highlights and accents
-Clean White| "#FFFFFF"| Readability and contrast
-
-Design Philosophy
-
-Professional • Minimal • Modern • Healthcare Technology
+<sub>Modern Technology | Smart Healthcare | Digital Patient Management</sub>
 
 </div>
 
