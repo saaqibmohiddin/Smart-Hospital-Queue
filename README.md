@@ -186,7 +186,7 @@ Or use VS Code Live Server.
 
 ---
 
-<div align="center"><img src="https://img.shields.io/badge/PROJECT-READY%20TO%20RUN-087E83?style=for-the-badge" />DEEP NAVY · MEDICAL TEAL · MINT GREEN
+<div align="center"><img src="https://img.shields.io/badge/PROJECT-READY%20TO%20RUN-087E83?style=for-the-badge" />
 
 <sub>Smart Technology for Better Patient Flow.</sub>
 
