@@ -73,17 +73,44 @@ The goal is to make hospital queue management more organized, accessible, and ef
 
 ---
 
-🛠️ Technology Stack
+🛠️ TECHNOLOGY STACK
 
-<div align="center">Technology| Purpose
-"Python" (https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)| Application logic
-"Streamlit" (https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)| Python web interface
-"HTML5" (https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)| Web structure
-"CSS3" (https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)| Web styling
-"JavaScript" (https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)| Web functionality
-"LocalStorage" (https://img.shields.io/badge/Browser-Local%20Storage-087E83?style=flat)| Web queue persistence
+<div align="center">Powered by Modern Technologies
 
-</div>---
+<p>
+  <img src="https://img.shields.io/badge/PYTHON-102D42?style=for-the-badge&logo=python&logoColor=62D9C1" />
+  <img src="https://img.shields.io/badge/STREAMLIT-087E83?style=for-the-badge&logo=streamlit&logoColor=white" />
+</p><p>
+  <img src="https://img.shields.io/badge/HTML5-102D42?style=for-the-badge&logo=html5&logoColor=62D9C1" />
+  <img src="https://img.shields.io/badge/CSS3-087E83?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JAVASCRIPT-102D42?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+</p><p>
+  <img src="https://img.shields.io/badge/LOCAL_STORAGE-087E83?style=for-the-badge&logo=googlechrome&logoColor=white" />
+</p></div>Technology Overview
+
+Technology| Purpose
+🐍 Python| Application logic and queue operations
+⚡ Streamlit| Python application interface
+🌐 HTML5| Web application structure
+🎨 CSS3| Styling and responsive layouts
+⚙️ JavaScript| Queue interactions and token management
+💾 Local Storage| Browser-based queue data persistence
+
+🎨 Design Theme
+
+<div align="center">Color| Hex Code| Purpose
+Deep Navy| "#102D42"| Professional healthcare background
+Medical Teal| "#087E83"| Primary healthcare identity
+Mint Green| "#62D9C1"| Highlights and accents
+Clean White| "#FFFFFF"| Readability and contrast
+
+Design Philosophy
+
+Professional • Minimal • Modern • Healthcare Technology
+
+</div>
+
+</div>
 
 🔄 How The System Works
 
