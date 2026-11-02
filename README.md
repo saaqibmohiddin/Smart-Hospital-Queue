@@ -246,18 +246,14 @@ Specialization in Artificial Intelligence
 
 <br/><img src="https://img.shields.io/badge/ROLE-AI%20%E2%80%A2%20PYTHON%20DEVELOPER-087E83?style=for-the-badge&labelColor=102D42" /><br/><br/>
 
-🌐 CONNECT WITH ME
+### 🌐 CONNECT WITH ME
 
-<a href="https://github.com/saaqibmohiddin" target="_blank">
-  <img src="https://img.shields.io/badge/VISIT%20MY%20GITHUB-102D42?style=for-the-badge&logo=github&logoColor=62D9C1" />
-</a>
-
-<a href="https://github.com/saaqibmohiddin?tab=repositories">View GitHub Repositories →</a>
-
-<br/><br/>
-
----
-
-DESIGNED WITH PASSION FOR TECHNOLOGY
-
-</div>
+<p align="center">
+  <a href="https://github.com/saaqibmohiddin">
+    <img src="https://img.shields.io/badge/VISIT%20MY%20GITHUB-102D42?style=for-the-badge&logo=github&logoColor=62D9C1" />
+  </a>
+  <br/><br/>
+  <a href="https://github.com/saaqibmohiddin">
+    https://github.com/saaqibmohiddin
+  </a>
+</p>
