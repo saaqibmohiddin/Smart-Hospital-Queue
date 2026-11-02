@@ -239,24 +239,26 @@ A production deployment would require secure authentication, centralized storage
 
 ## 👨‍💻 DEVELOPER
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:102D42,50:087E83,100:62D9C1&text=THE%20DEVELOPER&fontSize=30&fontColor=FFFFFF&fontAlignY=50" width="100%" />MOHAMMED SAAQIB MOHIDDIN
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&height=80&color=0:102D42,50:087E83,100:62D9C1&text=THE%20DEVELOPER&fontColor=FFFFFF&fontSize=22&fontAlignY=60" width="100%" /><br/>MOHAMMED SAAQIB MOHIDDIN
 
 Computer Science & Engineering
 
 Specialization in Artificial Intelligence
 
-<p>
-  <img src="https://img.shields.io/badge/FOCUS-AI &%20SOFTWARE DEVELOPMENT-087E83?style=for-the-badge" />
-</p>🌐 CONNECT WITH ME
+<br/><img src="https://img.shields.io/badge/ROLE-AI%20ENGINEER%20%E2%80%A2%20PYTHON%20DEVELOPER-087E83?style=for-the-badge&labelColor=102D42" /><br/><br/>
 
-[![Visit My GitHub](https://img.shields.io/badge/VISIT%20MY%20GITHUB-102D42?style=for-the-badge&logo=github&logoColor=62D9C1)](https://github.com/saaqibmohiddin)
+🌐 CONNECT WITH ME
+
+<a href="https://github.com/saaqibmohiddin">
+  <img src="https://img.shields.io/badge/VISIT%20MY%20GITHUB-102D42?style=for-the-badge&logo=github&logoColor=62D9C1" />
+</a><br/><br/>
 
 <a href="https://github.com/saaqibmohiddin?tab=repositories">View GitHub Repositories →</a>
+
+<br/><br/>
 
 ---
 
 DESIGNED WITH PASSION FOR TECHNOLOGY
-
-<sub>
 
 </div>
