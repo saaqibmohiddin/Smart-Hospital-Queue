@@ -10,8 +10,7 @@ Smarter Queues. Reduced Waiting. Better Patient Experience.
   <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JS-087E83?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Development-62D9C1?style=for-the-badge" />
 </p><p>
-  <a href="https://github.com/saaqibmohiddin">Developer Profile</a> •
-  <a href="https://github.com/saaqibmohiddin/Smart-Hospital-Queue">Project Repository</a>
+ 
 </p></div>
 
 🩺 About The Project
