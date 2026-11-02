@@ -12,7 +12,7 @@ Smarter Queues. Reduced Waiting. Better Patient Experience.
 </p><p>
   <a href="https://github.com/saaqibmohiddin">Developer Profile</a> •
   <a href="https://github.com/saaqibmohiddin/Smart-Hospital-Queue">Project Repository</a>
-</p></div>---
+</p></div>
 
 🩺 About The Project
 
