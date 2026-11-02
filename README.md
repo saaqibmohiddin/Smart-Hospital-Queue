@@ -1,210 +1,229 @@
 🏥 SMART HOSPITAL QUEUE
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&height=220&color=0:12304A,45:0B8990,100:55C9A5&text=SMART%20HOSPITAL%20QUEUE&fontSize=34&fontColor=FFFFFF&fontAlignY=42&desc=HEALTHCARE%20%7C%20PATIENT%20FLOW%20%7C%20QUEUE%20MANAGEMENT&descSize=13&descAlignY=62" width="100%" />Smarter Patient Flow. Simpler Queue Management.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=210&color=0:102D42,45:087E83,100:65D9C0&text=SMART%20HOSPITAL%20QUEUE&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=PATIENT%20FLOW%20MANAGEMENT%20SYSTEM&descSize=14&descAlignY=60" width="100%" />
+</p><p align="center">
+  <strong>ORGANIZED QUEUES. EFFICIENT PATIENT FLOW.</strong>
+</p><p align="center">
+  A simple and user-friendly solution for hospital patient queue management.
+</p>---
 
-An organized and user-friendly approach to hospital patient queues.
+🩺 ABOUT THE PROJECT
 
-<br/>"Python" (https://img.shields.io/badge/Python-12304A?style=flat-square&logo=python&logoColor=white)
-"Streamlit" (https://img.shields.io/badge/Streamlit-0B8990?style=flat-square&logo=streamlit&logoColor=white)
-"HTML5" (https://img.shields.io/badge/HTML5-E66A3C?style=flat-square&logo=html5&logoColor=white)
-"CSS3" (https://img.shields.io/badge/CSS3-2878B5?style=flat-square&logo=css3&logoColor=white)
-"JavaScript" (https://img.shields.io/badge/JavaScript-C49A27?style=flat-square&logo=javascript&logoColor=white)
-
-</div>---
-
-◈ PROJECT OVERVIEW
-
-Smart Hospital Queue is a Python-based patient queue management project designed to make hospital waiting-line management simple and organized.
+Smart Hospital Queue is a Python-based project designed to simplify patient registration and hospital waiting-line management.
 
 It provides two separate interfaces:
 
-- Python Application: Built using Streamlit.
-- Web Application: Built using HTML, CSS, and JavaScript.
+- Streamlit Application — A Python-based graphical interface.
+- Web Application — A browser-based interface developed using HTML, CSS, and JavaScript.
 
-The system allows users to register patients, generate token numbers, monitor the waiting queue, call the next patient, and estimate waiting time.
-
----
-
-◈ CORE FEATURES
-
-Feature| Description
-Patient Registration| Add patients using their names
-Token Generation| Assign a unique token number
-Queue Display| View patients currently waiting
-Next Patient| Call the next patient in line
-Waiting Estimation| Estimate waiting time based on queue position
-Patient Removal| Remove a waiting patient in the web interface
-Queue Dashboard| View queue statistics in the web interface
-Queue Clearing| Clear the waiting queue in the web interface
+The system helps manage patient tokens, organize waiting queues, call the next patient, and estimate waiting time.
 
 ---
 
-◈ HEALTHCARE DESIGN SYSTEM
+✦ SYSTEM FEATURES
 
-The project uses a healthcare-inspired visual direction focused on clarity, trust, accessibility, and simplicity.
+01 — Patient Registration
 
-Color Palette
+Register patients by entering their names.
 
-Color Name| Hex| Usage
-Hospital Blue| "#12304A"| Main identity and headers
-Medical Teal| "#0B8990"| Main actions and highlights
-Mint Green| "#55C9A5"| Positive status and accents
-Clean White| "#F4F8FB"| Background
-Soft Mint| "#DCEFEB"| Information sections
-Alert Coral| "#E66A65"| Warning and removal actions
-Slate Text| "#25364A"| Readable text
+02 — Token Generation
 
-UI / UX Direction
+Automatically assign a unique token number to each registered patient.
 
-- Professional healthcare dashboard appearance.
-- Clear patient token visibility.
-- Structured queue presentation.
-- Simple registration workflow.
-- Consistent spacing and typography.
-- Responsive web layout.
-- Easy-to-understand status indicators.
+03 — Queue Management
+
+Display patients in their waiting order.
+
+04 — Next Patient
+
+Call the next patient and update the queue.
+
+05 — Waiting Time Estimation
+
+Estimate waiting time using the patient's position in the queue.
+
+06 — Queue Dashboard
+
+The browser interface displays:
+
+- Total patients waiting
+- Currently serving token
+- Next token number
+- Estimated total waiting time
+
+07 — Queue Controls
+
+The browser interface also supports removing individual patients and clearing the waiting queue.
 
 ---
 
-◈ TECHNOLOGY STACK
+🎨 DESIGN SYSTEM
 
-<div align="center">Technology| Implementation
-Python| Core application logic
-Streamlit| Python application interface
-HTML5| Web interface structure
-CSS3| Web interface styling
-JavaScript| Queue operations in browser
-Local Storage| Browser queue-state persistence
+The README and project presentation follow a modern healthcare dashboard design.
 
-</div>---
+Visual Identity
 
-◈ PATIENT QUEUE WORKFLOW
+Color| Hex Code| Application
+Deep Hospital Blue| "#102D42"| Main identity
+Medical Teal| "#087E83"| Actions and highlights
+Clinical Mint| "#65D9C0"| Positive accents
+Ice White| "#F4F8FA"| Background
+Soft Aqua| "#E8F4F3"| Information sections
+Slate| "#263B4A"| Typography
+Alert Coral| "#E76F68"| Warnings and removal
+
+Design Principles
+
+- Minimal and professional layout
+- Healthcare-inspired color palette
+- Clear visual hierarchy
+- Easy-to-read patient information
+- Consistent spacing and typography
+- Mobile-friendly web interface
+
+---
+
+⚙️ TECHNOLOGY STACK
+
+Technology| Role
+Python| Application logic
+Streamlit| Python graphical interface
+HTML5| Web page structure
+CSS3| Styling and responsive layout
+JavaScript| Browser queue operations
+Local Storage| Browser queue-state storage
+
+---
+
+🔄 HOW THE SYSTEM WORKS
 
        PATIENT ARRIVES
               |
               ▼
-      PATIENT REGISTRATION
+      REGISTER PATIENT
               |
               ▼
-       TOKEN GENERATION
+       GENERATE TOKEN
               |
               ▼
-       ADD TO WAITING QUEUE
+        JOIN QUEUE
               |
               ▼
-      WAITING TIME ESTIMATE
+      ESTIMATE WAIT TIME
               |
               ▼
-       CALL NEXT PATIENT
+      CALL NEXT PATIENT
               |
               ▼
         PATIENT SERVED
 
 ---
 
-◈ PROJECT ARCHITECTURE
+⏱️ WAITING TIME CALCULATION
+
+The project uses a basic waiting-time estimation method.
+
+Estimated Waiting Time = Number of Patients Ahead × 10 Minutes
+
+Example:
+
+Patient Position| Estimated Wait
+1| 0 minutes
+2| 10 minutes
+3| 20 minutes
+4| 30 minutes
+5| 40 minutes
+
+This is a fixed estimate for demonstration purposes, not a real-time prediction of doctor availability.
+
+---
+
+📁 PROJECT STRUCTURE
 
 Smart-Hospital-Queue/
 │
 ├── README.md
-│
 ├── hospital_gui.py
-│
 ├── index.html
-│
 └── requirements.txt
 
-File Responsibilities
+File Description
 
-File| Responsibility
-"hospital_gui.py"| Streamlit-based patient queue application
-"index.html"| HTML/CSS/JavaScript browser interface
-"requirements.txt"| Python package requirements
+File| Purpose
+"hospital_gui.py"| Streamlit-based queue management
+"index.html"| Browser-based queue application
+"requirements.txt"| Python dependencies
 "README.md"| Project documentation
 
 ---
 
-◈ GETTING STARTED
+🚀 INSTALLATION & EXECUTION
 
-Step 01 — Clone Repository
+Step 1 — Clone the Repository
 
 git clone https://github.com/saaqibmohiddin/Smart-Hospital-Queue.git
 
-Step 02 — Navigate to Project
+Step 2 — Open the Project Directory
 
 cd Smart-Hospital-Queue
 
-Step 03 — Install Dependencies
+Step 3 — Install Dependencies
 
 pip install -r requirements.txt
 
-Step 04 — Launch Python Application
+Step 4 — Run the Python Application
 
 streamlit run hospital_gui.py
 
-Step 05 — Open Web Application
+Step 5 — Run the Web Application
 
-Open "index.html" in your preferred web browser.
-
----
-
-◈ WAITING TIME LOGIC
-
-The project uses a simple waiting-time estimation rule:
-
-Estimated Waiting Time = Patients Ahead × 10 Minutes
-
-For example:
-
-Queue Position| Estimated Waiting Time
-First patient| 0 minutes
-Second patient| 10 minutes
-Third patient| 20 minutes
-Fourth patient| 30 minutes
-Fifth patient| 40 minutes
-
-This is a basic estimate, not a real-time prediction of doctor availability.
+Open "index.html" directly in your web browser.
 
 ---
 
-◈ PROJECT OBJECTIVES
+🎯 PROJECT OBJECTIVES
 
-- Organize hospital patient queues.
 - Simplify patient registration.
-- Reduce manual queue-handling effort.
-- Provide token-based patient identification.
-- Display estimated waiting times.
-- Improve visibility of the waiting queue.
+- Organize hospital waiting queues.
+- Generate unique patient tokens.
+- Display queue information clearly.
+- Estimate patient waiting times.
+- Reduce manual queue-management effort.
 
 ---
 
-◈ FUTURE DEVELOPMENT
+🔮 FUTURE ENHANCEMENTS
 
-Potential improvements for future versions:
-
-- Database integration for persistent patient records.
-- Doctor and department-wise queues.
-- Appointment scheduling.
-- QR-based patient tokens.
-- SMS notifications.
-- Administrative dashboard.
-- Emergency priority handling.
-- More accurate waiting-time estimation.
+- Database integration for patient records
+- Doctor-wise and department-wise queues
+- Appointment scheduling
+- QR-based token generation
+- Patient notification system
+- Administrative dashboard
+- Emergency patient priority management
+- Improved waiting-time estimation
 
 ---
 
+👨‍💻 DEVELOPER
 
-<div align="center">SAAQIB MOHIDDIN
+Saaqib Mohiddin
 
 Computer Science and Engineering
+
 Artificial Intelligence
 
-""GitHub" (https://img.shields.io/badge/GitHub-Visit%20Profile-12304A?style=for-the-badge&logo=github&logoColor=white)" (https://github.com/saaqibmohiddin)
+"GitHub Profile" (https://github.com/saaqibmohiddin)
 
-</div>---
+"Project Repository" (https://github.com/saaqibmohiddin/Smart-Hospital-Queue)
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=0:55C9A5,50:0B8990,100:12304A&height=110&section=footer" width="100%" />SMART HOSPITAL QUEUE
+---
 
-Organized Queues. Better Patient Flow.
-
-</div>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:65D9C0,50:087E83,100:102D42&section=footer" width="100%" />
+</p><p align="center">
+  <strong>SMART HOSPITAL QUEUE</strong>
+  <br/>
+  <sub>Better Organization. Simpler Patient Flow.</sub>
+</p>
