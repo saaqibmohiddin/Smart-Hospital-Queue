@@ -248,9 +248,9 @@ Specialization in Artificial Intelligence
 
 🌐 CONNECT WITH ME
 
-<a href="https://github.com/saaqibmohiddin">
+<a href="https://github.com/saaqibmohiddin" target="_blank">
   <img src="https://img.shields.io/badge/VISIT%20MY%20GITHUB-102D42?style=for-the-badge&logo=github&logoColor=62D9C1" />
-</a><br/><br/>
+</a>
 
 <a href="https://github.com/saaqibmohiddin?tab=repositories">View GitHub Repositories →</a>
 
