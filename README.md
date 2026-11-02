@@ -73,7 +73,7 @@ The goal is to make hospital queue management more organized, accessible, and ef
 
 ---
 
-🛠️ Technology Stack
+## 🛠️ TECHNOLOGY STACK
 
 
 <p>
