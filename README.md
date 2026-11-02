@@ -237,28 +237,29 @@ A production deployment would require secure authentication, centralized storage
 
 ---
 
-👨‍💻 Developer
+## 👨‍💻 DEVELOPER
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&height=110&color=0:102D42,100:087E83&text=SAAQIB%20MOHIDDIN&fontSize=29&fontColor=FFFFFF&fontAlignY=50" width="100%" />MOHAMMED SAAQIB MOHIDDIN
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:102D42,50:087E83,100:62D9C1&text=THE%20DEVELOPER&fontSize=30&fontColor=FFFFFF&fontAlignY=50" width="100%" />MOHAMMED SAAQIB MOHIDDIN
 
-Computer Science and Engineering
+Computer Science & Engineering
 
-Artificial Intelligence
+Specialization in Artificial Intelligence
 
 <p>
-  <a href="https://github.com/saaqibmohiddin">
-    <img src="https://img.shields.io/badge/GitHub-Visit%20My%20Profile-102D42?style=for-the-badge&logo=github&logoColor=62D9C1" />
-  </a>
-</p>Explore More Projects
+  <img src="https://img.shields.io/badge/ROLE-B.Tech%20Student-102D42?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/FOCUS-ARTIFICIAL%20INTELLIGENCE-087E83?style=for-the-badge" />
+</p>🌐 CONNECT WITH ME
 
-<a href="https://github.com/saaqibmohiddin?tab=repositories">View All My Repositories</a>
+<a href="https://github.com/saaqibmohiddin">
+  <img src="https://img.shields.io/badge/VISIT%20MY%20GITHUB-102D42?style=for-the-badge&logo=github&logoColor=62D9C1" />
+</a>Explore my projects and repositories
 
-</div>---
+<a href="https://github.com/saaqibmohiddin?tab=repositories">View GitHub Repositories →</a>
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=130&color=0:62D9C1,50:087E83,100:102D42&section=footer" width="100%" />🏥 SMART HOSPITAL QUEUE
+---
 
-Better Organization. Smarter Healthcare. Better Patient Flow.
+DESIGNED WITH PASSION FOR TECHNOLOGY
 
-⭐ If you find this project interesting, consider giving the repository a star!
+<sub>Deep Navy · Medical Teal · Mint Green</sub>
 
 </div>
