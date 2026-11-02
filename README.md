@@ -164,7 +164,7 @@ Alternatively, use the VS Code Live Server extension.
 
 ---
 
-🎯 Project Objectives
+## 🎯 Project Objectives
 
 - Digitize traditional hospital queue management.
 - Simplify patient registration.
@@ -176,7 +176,7 @@ Alternatively, use the VS Code Live Server extension.
 
 ---
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 The following features are potential future improvements:
 
@@ -194,7 +194,7 @@ The following features are potential future improvements:
 
 ---
 
-⚠️ Project Scope & Limitations
+## ⚠️ Project Scope & Limitations
 
 This project is currently a demonstration application.
 
