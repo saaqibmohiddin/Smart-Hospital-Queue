@@ -148,35 +148,47 @@ Smart-Hospital-Queue/
 
 </div>
 
-## 🚀 Installation & Setup
+## 🚀 INSTALLATION & SETUP
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&height=65&color=0:102D42,50:087E83,100:62D9C1&text=GET%20STARTED&fontSize=24&fontColor=FFFFFF" width="100%" />Follow these simple steps to run the project
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=130&color=0:102D42,50:087E83,100:62D9C1&text=QUICK%20START&fontSize=30&fontColor=FFFFFF&fontAlignY=50" width="100%" />Get your Smart Hospital Queue running in minutes.
 
-</div>01. 📥 Clone Repository
+</div>🧩 STEP 01 — Prerequisites
+
+- Python installed
+- Git installed
+- VS Code or any code editor
+- Modern web browser
+
+📥 STEP 02 — Get the Project
 
 git clone https://github.com/saaqibmohiddin/Smart-Hospital-Queue.git
-
-02. 📂 Open Project Folder
-
 cd Smart-Hospital-Queue
 
-03. 📦 Install Dependencies
+📦 STEP 03 — Install Requirements
 
 pip install -r requirements.txt
 
-04. 🐍 Run Python Application
+---
+
+🐍 RUN PYTHON APPLICATION
+
+Streamlit Interface
 
 streamlit run hospital_gui.py
 
-05. 🌐 Run Web Application
+🌐 RUN WEB APPLICATION
 
-Open "index.html" in your browser or use the VS Code Live Server extension.
+Browser Interface
+
+Open "index.html" directly in your browser.
+
+Or use VS Code Live Server.
 
 ---
 
-<div align="center"><img src="https://img.shields.io/badge/STATUS-READY%20TO%20RUN-087E83?style=for-the-badge" />SMART HOSPITAL QUEUE
+<div align="center"><img src="https://img.shields.io/badge/PROJECT-READY%20TO%20RUN-087E83?style=for-the-badge" />DEEP NAVY · MEDICAL TEAL · MINT GREEN
 
-<sub>Simple Setup • Smart Technology • Better Healthcare</sub>
+<sub>Smart Technology for Better Patient Flow.</sub>
 
 </div>
 
