@@ -118,18 +118,20 @@ The goal is to make hospital queue management more organized, accessible, and ef
 
 ## 📁 Project Structure
 
-<div align="center">🏥 SMART HOSPITAL QUEUE
+<div align="center">SMART HOSPITAL QUEUE
 
-Simple • Organized • Efficient
+<sub>Project Directory</sub>
 
-</div>Smart-Hospital-Queue/
-│
-├── 📄 README.md
-├── 🐍 hospital_gui.py
-├── 🌐 index.html
-└── 📦 requirements.txt
+</div>File| Description
+🐍 "hospital_gui.py"| Python Application
+🌐 "index.html"| Web Application
+📦 "requirements.txt"| Dependencies
+📄 "README.md"| Documentation
 
-<sub>Smart Healthcare | Digital Queue Management</sub>
+
+<sub>Organized Code. Smarter Healthcare.</sub>
+
+</div>
 
 </div>
 
