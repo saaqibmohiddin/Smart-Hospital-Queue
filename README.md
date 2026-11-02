@@ -118,17 +118,12 @@ The goal is to make hospital queue management more organized, accessible, and ef
 
 ## 📁 Project Structure
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&height=75&color=0:102D42,50:087E83,100:62D9C1&text=PROJECT%20DIRECTORY&fontSize=24&fontColor=FFFFFF" width="100%" /></div>Smart-Hospital-Queue/
+Smart-Hospital-Queue/
 │
-├── README.md
-│
-├── hospital_gui.py
-│
-├── index.html
-│
-└── requirements.txt
-
-<div align="center">SMART HEALTHCARE • SMART MANAGEMENT
+├── 📄 README.md
+├── 🐍 hospital_gui.py
+├── 🌐 index.html
+└── 📦 requirements.txt
 
 
 </div>
