@@ -1,76 +1,119 @@
-🏥 SMART HOSPITAL QUEUE
+🏥 Smart Hospital Queue
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0B2538,40:075B65,100:20B89A&text=SMART%20HOSPITAL%20QUEUE&fontSize=34&fontColor=FFFFFF&fontAlignY=42&desc=SMARTER%20PATIENT%20QUEUE%20MANAGEMENT&descSize=14&descAlignY=62" width="100%" />ORGANIZED PATIENT FLOW. SIMPLE QUEUE MANAGEMENT.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:102B3F,50:087E83,100:66DEC5&text=SMART%20HOSPITAL%20QUEUE&fontSize=32&fontColor=FFFFFF&fontAlignY=42&desc=PATIENT%20QUEUE%20MANAGEMENT%20SYSTEM&descSize=13&descAlignY=62" width="100%" />
+</p><p align="center">
+  <strong>BETTER ORGANIZATION. SIMPLER PATIENT FLOW.</strong>
+</p><p align="center">
+  A Python-based hospital queue management project with a Streamlit application and a separate web interface.
+</p><p align="center">
+  <img src="https://skillicons.dev/icons?i=python,html,css,js" height="42" />
+  <img src="https://img.shields.io/badge/Streamlit-087E83?style=flat-square&logo=streamlit&logoColor=white" height="24" />
+</p>---
 
-A Python-based application for managing hospital patient queues, generating tokens, and estimating waiting time.
+01. Project Overview
 
-</div>---
+Smart Hospital Queue is designed to simplify patient registration and organize hospital waiting queues.
 
-🩺 ABOUT THE PROJECT
+The project provides two independent applications:
 
-Smart Hospital Queue is a patient queue management application developed to make hospital waiting-line management easier and more organized.
+Python Application
 
-The project includes two independent interfaces:
+- Developed using Python and Streamlit.
+- Provides patient registration and queue management.
 
-- Python Application: Built using Streamlit.
-- Web Application: Built using HTML, CSS, and JavaScript.
+Web Application
 
-It helps register patients, generate unique tokens, display waiting queues, and call the next patient.
+- Developed using HTML, CSS, and JavaScript.
+- Provides a browser-based queue management interface.
+
+The system supports token generation, queue monitoring, next-patient calling, and waiting-time estimation.
 
 ---
 
-✨ FEATURES
+02. Features
 
-<div align="center">🏥 PATIENT REGISTRATION| 🎫 TOKEN GENERATION
-Register patients by name.| Automatically assign token numbers.
+Patient Registration
 
-👥 QUEUE MANAGEMENT| ⏱️ WAITING TIME
-View patients in waiting order.| Estimate waiting time by queue position.
+Register patients by entering their names.
 
-📢 NEXT PATIENT| 📊 QUEUE DASHBOARD
-Call the next patient.| View queue statistics in the web interface.
+Token Generation
 
-</div>Additional browser features:
+Automatically assign sequential token numbers.
 
-- Remove an individual waiting patient.
+Queue Management
+
+Display patients in their waiting order.
+
+Next Patient
+
+Call the next patient and update the waiting queue.
+
+Waiting Time Estimation
+
+Estimate waiting time according to the patient's position.
+
+Web Dashboard
+
+The browser interface displays queue statistics, including waiting patients, serving token, next token, and estimated waiting time.
+
+Additional Web Controls
+
+- Remove individual waiting patients.
 - Clear the waiting queue.
-- Retain browser queue state using local storage.
+- Retain queue state through browser local storage.
 
 ---
 
-⚙️ TECHNOLOGIES
+03. Technologies Used
 
-<div align="center"><img src="https://skillicons.dev/icons?i=python,html,css,js" /><br /><img src="https://img.shields.io/badge/Streamlit-Application-0B8990?style=for-the-badge&logo=streamlit&logoColor=white" /></div>---
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,html,css,js" />
+</p><p align="center">
+  <img src="https://img.shields.io/badge/STREAMLIT-Application-087E83?style=for-the-badge&logo=streamlit&logoColor=white" />
+</p>- Python — Application logic
+- Streamlit — Python application interface
+- HTML5 — Web structure
+- CSS3 — Web styling
+- JavaScript — Browser functionality
 
-🔄 HOW IT WORKS
+---
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&height=55&color=0B8990&text=PATIENT%20QUEUE%20WORKFLOW&fontColor=FFFFFF&fontSize=19" width="100%" /></div>       PATIENT ARRIVES
-              |
-              ▼
-      PATIENT REGISTRATION
-              |
-              ▼
-        TOKEN GENERATION
-              |
-              ▼
-         JOIN THE QUEUE
-              |
-              ▼
-      WAITING TIME ESTIMATE
-              |
-              ▼
-       CALL NEXT PATIENT
-              |
-              ▼
-         PATIENT SERVED
+04. Patient Queue Workflow
+
+flowchart TD
+    A([Patient Arrives]) --> B[Patient Registration]
+    B --> C[Generate Token]
+    C --> D[Join Waiting Queue]
+    D --> E[Estimate Waiting Time]
+    E --> F[Call Next Patient]
+    F --> G([Patient Served])
+
+    style A fill:#087E83,color:#fff
+    style G fill:#087E83,color:#fff
+    style B fill:#DDF5EF,color:#12304A
+    style C fill:#DDF5EF,color:#12304A
+    style D fill:#DDF5EF,color:#12304A
+    style E fill:#DDF5EF,color:#12304A
+    style F fill:#DDF5EF,color:#12304A
 
 Waiting Time Calculation
 
-"Estimated Waiting Time = Patients Ahead × 10 Minutes"
+Estimated Waiting Time = Patients Ahead × 10 Minutes
+
+Example:
+
+- Position 1 — 0 minutes
+- Position 2 — 10 minutes
+- Position 3 — 20 minutes
+- Position 4 — 30 minutes
+- Position 5 — 40 minutes
+
+This is a basic fixed estimate, not a real-time prediction of doctor availability.
 
 ---
 
-📁 PROJECT STRUCTURE
+05. Project Structure
 
 Smart-Hospital-Queue/
 │
@@ -81,47 +124,51 @@ Smart-Hospital-Queue/
 
 ---
 
-🚀 INSTALLATION & EXECUTION
+06. Installation and Execution
 
-1. Clone the repository
+Step 1 — Clone the Repository
 
 git clone https://github.com/saaqibmohiddin/Smart-Hospital-Queue.git
 
-2. Open the project folder
+Step 2 — Open the Project Folder
 
 cd Smart-Hospital-Queue
 
-3. Install dependencies
+Step 3 — Install Required Packages
 
 pip install -r requirements.txt
 
-4. Run the Python application
+Step 4 — Run the Python Application
 
 streamlit run hospital_gui.py
 
-5. Run the web application
+Step 5 — Open the Web Application
 
-Open "index.html" in your web browser.
+Open the "index.html" file in your web browser.
 
 ---
 
-👨‍💻 DEVELOPER
+07. Developer
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&height=150&color=0:0B2538,50:075B65,100:20B89A&text=SAAQIB%20MOHIDDIN&fontSize=30&fontColor=FFFFFF&fontAlignY=42&desc=COMPUTER%20SCIENCE%20%26%20ENGINEERING%20%7C%20AI&descSize=12&descAlignY=65" width="100%" />Saaqib Mohiddin
+<p align="center">
+  <strong>SAAQIB MOHIDDIN</strong>
+  <br/>
+  Computer Science and Engineering
+  <br/>
+  Artificial Intelligence
+</p><p align="center">
+  <a href="https://github.com/saaqibmohiddin">
+    <img src="https://img.shields.io/badge/VISIT%20MY%20GITHUB%20PROFILE-102B3F?style=for-the-badge&logo=github&logoColor=66DEC5" />
+  </a>
+</p><p align="center">
+  <a href="https://github.com/saaqibmohiddin/Smart-Hospital-Queue">
+    View Smart Hospital Queue Repository
+  </a>
+</p>---
 
-Computer Science and Engineering
-Artificial Intelligence
-
-<br /><a href="https://github.com/saaqibmohiddin">
-  <img src="https://img.shields.io/badge/VISIT%20PROFILE-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a><br /><br />
-
-<a href="https://github.com/saaqibmohiddin/Smart-Hospital-Queue">
-  <img src="https://img.shields.io/badge/PROJECT%20REPOSITORY-075B65?style=for-the-badge&logo=github&logoColor=white" />
-</a></div>---
-
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=110&color=0:20B89A,50:075B65,100:0B2538&section=footer" width="100%" />SMART HOSPITAL QUEUE
-
-Better Organization. Better Patient Flow.
-
-</div>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:66DEC5,50:087E83,100:102B3F&section=footer" width="100%" />
+  <strong>SMART HOSPITAL QUEUE</strong>
+  <br/>
+  <sub>Organized Queues. Better Patient Flow.</sub>
+</p>
