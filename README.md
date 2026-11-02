@@ -11,7 +11,7 @@ Smarter Queues. Reduced Waiting. Better Patient Experience.
  
 </p></div>
 
-🩺 ABOUT THE PROJECT
+## 🩺 ABOUT THE PROJECT
 
 Smart Hospital Queue is a healthcare-focused queue management application developed to simplify patient registration and organize hospital waiting queues.
 
@@ -89,7 +89,7 @@ The goal is to make hospital queue management more organized, accessible, and ef
 
 </div>
 
-🔄 How The System Works
+## 🔄 How The System Works
 
         PATIENT ARRIVES
                |
@@ -114,24 +114,7 @@ The goal is to make hospital queue management more organized, accessible, and ef
                ▼
         QUEUE IS UPDATED
 
-Waiting Time Calculation
 
-The project uses a simple estimated waiting-time formula:
-
-Estimated Waiting Time = Patients Ahead × 10 Minutes
-
-Example:
-
-Queue Position| Estimated Waiting
-1| 0 minutes
-2| 10 minutes
-3| 20 minutes
-4| 30 minutes
-5| 40 minutes
-
-Note: This is a demonstration estimate, not a clinically validated or guaranteed consultation time.
-
----
 
 📁 Project Structure
 
