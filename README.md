@@ -13,7 +13,7 @@ Smarter Queues. Reduced Waiting. Better Patient Experience.
  
 </p></div>
 
-🩺 About The Project
+🩺 ABOUT THE PROJECT
 
 Smart Hospital Queue is a healthcare-focused queue management application developed to simplify patient registration and organize hospital waiting queues.
 
