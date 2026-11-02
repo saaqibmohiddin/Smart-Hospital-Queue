@@ -141,7 +141,6 @@ Smart-Hospital-Queue/
 
 **SMART HEALTHCARE · SMART MANAGEMENT**
 
-<sub>Deep Navy • Medical Teal • Mint Green</sub>
 
 </div>
 
