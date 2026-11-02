@@ -237,7 +237,6 @@ A production deployment would require secure authentication, centralized storage
 
 ---
 
-## 👨‍💻 DEVELOPER
 
 <div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&height=80&color=0:102D42,50:087E83,100:62D9C1&text=THE%20DEVELOPER&fontColor=FFFFFF&fontSize=22&fontAlignY=60" width="100%" /><br/>MOHAMMED SAAQIB MOHIDDIN
 
